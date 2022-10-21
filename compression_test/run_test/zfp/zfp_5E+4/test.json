@@ -1,0 +1,12 @@
+{
+    "number_of_mpiprocs_x":6,
+    "number_of_mpiprocs_y":8,
+    "sz_timestep":20,
+    "input_root":"/share/home/wangw/CGFD3D-elastic-tuckermpi-kernel/test4/output",
+    "output_root":"compressed",
+    "velocity":1,
+    "stress":0,
+    "strain":0,
+    "tolerance":50000.0,
+    "reconstructed":1
+}

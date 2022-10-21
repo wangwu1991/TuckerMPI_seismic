@@ -1,0 +1,13 @@
+{
+  "number_of_mpiprocs_x": 6,
+  "number_of_mpiprocs_y": 8,
+  "sz_timestep": 5,
+  "input_root": "/share/home/wangw/CGFD3D-elastic-tuckermpi-kernel/test4/output",
+  "#input_root": "/share/home/wangw/compression_comparison/test/ttresh/ttresh_1E-1",
+  "output_root": "compressed",
+  "velocity": 1,
+  "stress": 0,
+  "strain": 0,
+  "tolerance": 1E-2,
+  "reconstructed": 0
+}

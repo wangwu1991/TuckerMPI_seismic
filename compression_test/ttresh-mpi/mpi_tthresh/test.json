@@ -1,0 +1,12 @@
+{
+  "number_of_mpiprocs_x": 2,
+  "number_of_mpiprocs_y": 3,
+  "sz_timestep": 10,
+  "tolerance": 1e-3,
+  "input_root": "/media/ww/data/CGFD3D-elastic-tuckermpi-kernel/test2/output",
+  "output_root": "compressed",
+  "velocity": 1,
+  "stress": 0,
+  "strain": 0,
+  "reconstructed": 1
+}

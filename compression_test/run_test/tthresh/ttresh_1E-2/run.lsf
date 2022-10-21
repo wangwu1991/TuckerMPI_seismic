@@ -1,0 +1,15 @@
+#!/bin/bash
+#BSUB -L /bin/bash
+#BSUB -J MPIJob ### set the job name
+#BSUB -q large ### specify queue
+#BSUB -n 48 ### ask for number of cores (default:1)
+#BSUB -R "span[ptile=48]"
+#BSUB -W 48:00 ### set walltime limit: hh:mm
+#BSUB -oo std_%J.out ### specify the output and error file. %J is the job-id
+#BSUB -eo std_%J.err ### -o and -e mean append, -oo and -eo mean overwrite
+
+#export LD_LIBRARY_PATH=/share/home/wangw/compression_comparison/install/SZ3/lib:${LD_LIBRARY_PATH}
+source /share/home/wangw/intel/oneapi/setvars.sh --force
+
+mpiexec -np 48 /share/home/wangw/compression_comparison/mpi/ttresh-mpi/mpi_tthresh/ttresh_mpi 
+#mpiexec -np 48 ../../../mpi/psnr/psnr_mpi
